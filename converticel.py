@@ -1,7 +1,8 @@
-# Date: 12/25/2024 #
-# 1. This script calls a basic function that converts Fahrenheit to Celsius.   #
-# 2. User Input for Fahrenhiet (degrees)--> then converted to an integer.      #
-# 2. It prints the result, then restarts the script (unless user types 'exit') #
+# Converticel
+## Date: 12/25/2024  - The first foray beyond "Hello, World!".
+### 1. This script calls a basic function that converts Fahrenheit to Celsius.         #
+### 2. User Input for Fahrenhiet (degrees)--> then converted to an integer.            #
+### 2. It prints the result, then restarts the script (unless user types 'q' to exit). #
 
 def get_integer_input(): ## Looped function for checking user input for accepted integers.
     while True:

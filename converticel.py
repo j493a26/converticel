@@ -4,6 +4,8 @@
 ### 2. User Input for Fahrenhiet (degrees)--> then converted to an integer.            #
 ### 3. It prints the result, then restarts the script (unless user types 'q' to exit). #
 
+degree_sign = u'\N{DEGREE SIGN}'
+
 def get_integer_input(): ## Looped function for checking user input for accepted integers.
     while True:
         user_input = input("Enter the temperature in Fahrenheit (degrees) | 'q' to exit--: ")
@@ -23,5 +25,7 @@ while True:
         print("Exiting")
         break
     c = convert_to_celsius(f)
-    print((f), ("degrees Fahrenheit is"), (round(c, 2)), ("degrees Celsius"))
+##    print((f), ("degrees Fahrenheit is"), (round(c, 2)), ("degrees Celsius"))
 ##  print(f"{f} Degrees Fahrenheit is {c:.2f} Degrees Celsius.")       ## Two decimal places displayed using a "f string"
+
+    print(f'{f}{degree_sign}F is {c:.2f}{degree_sign}C')
